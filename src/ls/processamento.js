@@ -63,9 +63,12 @@ function ls_with_filters(args = [""]) {
             .then((color_files) => show.row(color_files, [""], true))
             .then((str = "") => console.log(mensagemFinalFilter(path, extension, str)));
         }
+        else{
+            throw new Error("Invalid argments: \n")
+        }
     }
     else {
-        throw new Error("Invalid arguments")
+        throw new Error("Invalid arguments: \n")
     }
 }
 

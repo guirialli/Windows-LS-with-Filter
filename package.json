@@ -1,9 +1,10 @@
 {
-  "name": "master-ls",
+  "name": "lsg",
   "version": "0.2.0",
   "description": "",
-  "main": "index.js",
+  "main": "bin/main.js",
   "scripts": {
+    "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

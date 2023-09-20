@@ -1,6 +1,6 @@
-function list_dirs(directory_to, ocult = false) {
+function list_dirs(directory_to, ocult = false, cor = true) {
   return new Promise(function (resolve, reject) {
-    const color = require("colors");
+    const colors = require("colors");
     const fs = require("fs");
     if (fs.existsSync(directory_to)) {
       const new_dirs = [];
@@ -9,11 +9,13 @@ function list_dirs(directory_to, ocult = false) {
       for (let i = 0; i < dirs.length; i++) {
         const stats = fs.statSync(`${directory_to}/${dirs[i]}`);
         if (stats.isDirectory()) {
-          if (ocult) new_dirs.push((dirs[i] + "/").green);
-          else if (dirs[i][0] != ".") new_dirs.push((dirs[i] + "/").green);
+          if (ocult)
+            new_dirs.push(cor ? (dirs[i] + "/").green : dirs[i] + "/");
+          else if (dirs[i][0] != ".")
+            new_dirs.push(cor ? (dirs[i] + "/").green : dirs[i] + "/");
         } else {
-          if (ocult) new_files.push(dirs[i].blue);
-          else if (dirs[i][0] != ".") new_files.push((dirs[i]).blue);
+          if (ocult) new_files.push(cor ? dirs[i].blue : dirs[i]);
+          else if (dirs[i][0] != ".") new_files.push((cor) ? dirs[i].blue : dirs[i]);
         }
       }
       resolve([new_dirs, new_files]);
@@ -25,7 +27,7 @@ function list_dirs(directory_to, ocult = false) {
 
 function filter(arr = [""], extension = "") {
   const arr_filter = [];
-  if (extension[0] === ".") extension = extension.split(".", "");
+  if (extension[0] === ".") extension = extension.replace(".", "")
   arr.forEach((item) => {
     item_arr = item.split(".");
     if (item_arr.length > 1 && item_arr[item_arr.length - 1] === extension)

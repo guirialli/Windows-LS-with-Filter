@@ -43,6 +43,44 @@ lsg [path] [filter] [extension]
   ```
   lsg my-folder/ -f .js
   ```
+ 
+### Show Files in List Format
+To display files and directories in list format, you can use the `-l` option:
+
+```bash
+lsg -l
+```
+
+This will list the files and directories in the current directory in a list format.
+
+### Show Hidden Files
+To show hidden files (files and directories that start with a dot '.'), you can use the `-a` option:
+
+```bash
+lsg -a
+```
+
+This will list all files and directories, including hidden ones, in the current directory.
+
+### Show Files in List Format, Including Hidden Files
+To display both hidden and non-hidden files in list format, you can combine the `-l` and `-a` options:
+
+```bash
+lsg -la
+```
+
+This will list all files and directories, including hidden ones, in a list format.
+
+### Combine Options with Filtering
+You can also combine these options with the filter and extension options as you mentioned. For example, to list all '.js' files in list format:
+
+```bash
+lsg -l -f .js
+```
+
+This command will list all '.js' files in the current directory in a list format.
+
+Feel free to customize these commands further to suit your specific needs.
 
 ## Installation
 Of course! Here's the updated installation section with "lsg" instead of "ls," and the repository URL:

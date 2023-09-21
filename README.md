@@ -71,7 +71,7 @@ To install LSG (Windows LS with Filter), follow these steps:
 
    - In the "Environment Variables" window, under "System variables," find and select the "Path" variable, then click the "Edit" button.
 
-   - In the "Edit Environment Variable" window, click the "New" button and add the path to your project folder. For example, if your project is located in `C:\path\to\lsg`, add that path.
+   - In the "Edit Environment Variable" window, click the "New" button and add the path to your project folder. For example, if your project is located in `C:\path\to\lsg\bin`, add that path.
 
    - Click "OK" to save your changes.
 

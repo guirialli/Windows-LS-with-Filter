@@ -87,6 +87,22 @@ Of course! Here's the updated installation section with "lsg" instead of "ls," a
 
 ---
 
+## Requires
+
+Before using LSG (Windows LS with Filter), ensure you have the following requirement installed:
+
+- **Node.js:** LSG is a Node.js-based command-line utility. Make sure you have Node.js installed on your system. You can download it from the official [Node.js website](https://nodejs.org/).
+
+  To check if Node.js is installed, open a command prompt and run:
+
+  ```bash
+  node -v
+  ```
+
+  If Node.js is installed, this command will display the installed version. If not, please download and install it from the provided link.
+
+---
+
 ## Installation
 
 To install LSG (Windows LS with Filter), follow these steps:

@@ -110,7 +110,7 @@ To install LSG (Windows LS with Filter), follow these steps:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/guirialli/lsg.git
+   git clone https://github.com/guirialli/Windows-LS-with-Filter
    ```
 
 2. **Add Project Folder to PATH:**
@@ -140,7 +140,7 @@ Now you're ready to use LSG (Windows LS with Filter) with ease.
 
 ---
 
-This updated installation section now refers to "LSG" instead of "LS" and includes the correct repository URL, which is "https://github.com/guirialli/lsg.git."
+This updated installation section now refers to "LSG" instead of "LS" and includes the correct repository URL, which is "https://github.com/guirialli/Windows-LS-with-Filter"
 ## Contributing
 
 We welcome contributions from the community. If you have any ideas, improvements, or bug fixes, please feel free to open an issue or submit a pull request.

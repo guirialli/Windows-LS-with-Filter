@@ -15,14 +15,14 @@ Windows LS with Filter is a command-line utility inspired by the 'ls' command in
 To use Windows LS with Filter, open the Windows command prompt and use the following syntax:
 
 ```
-ls [path] [filter] [extension]
+lsg [path] [filter] [extension]
 ```
 
 - `[path]` (optional): You can specify the directory path to list files from. If not specified, it defaults to the current directory.
 
 - `[filter]` (optional): You can specify a filter to display only files with a specific extension. For example, to list all '.js' files, use:
   ```
-  ls . -f .js
+  lsg . -f .js
   ```
 
 - `[extension]` (optional): Additional options to customize the listing behavior.
@@ -31,17 +31,17 @@ ls [path] [filter] [extension]
 
 - List all files and directories in the current directory:
   ```
-  ls
+  lsg
   ```
 
 - List all files and directories in a specific directory:
   ```
-  ls /path/to/directory
+  lsg /path/to/directory
   ```
 
 - List all '.js' files in the current directory:
   ```
-  ls my-folder/ -f .js
+  lsg my-folder/ -f .js
   ```
 
 ## Installation
